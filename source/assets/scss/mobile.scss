@@ -1,0 +1,92 @@
+/* Reset */
+@import "lib/_reset.scss";
+/* Mixins */
+@import "lib/_mixins.scss";
+
+
+
+.nav-toggle {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  z-index: 50;
+  top: 1.6em;
+  right: 1.25em;
+  width: 3em;
+  height: 3em;
+  span,
+  span:after,
+  span:before {
+    content:"";
+    display: block;
+    position: absolute;
+    height: .5em;
+    top: 25px;
+    left: 0;
+    right: 0;
+    border-radius: .5em;
+    background-color: #253341;
+    transition: transform 300ms, background-color 100ms;
+  }
+
+  span {
+    &:after,
+    &:before {
+      transition: 400ms;
+      transform-origin: .4em;
+    }
+    &:after {
+      top: calc(3em / 4);
+    }
+    &:before {
+      top: calc(-3em / 4);
+    }
+  }
+
+  &.active {
+    div {
+      &:after {
+        opacity: 0;
+      }
+      &:before {
+        opacity: 1;
+      }
+    }
+    span {
+      transform: rotate(90deg) translate(0.2em, 0);
+      background-color: transparent;
+      &:before {
+        transform: rotate(45deg);
+      }
+      &:after {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
+.main-nav {
+  display: none;
+  &--active {
+    display: block;
+  }
+  &__list {
+    width: calc(100% - 20px);
+    position: absolute;
+    display: block;
+    right: 10px;
+    top: 10px;
+    background-color: #fff;
+    padding: 80px 0 0 0;
+  }
+  &__list-entry {
+    background-color: #f0f0f0;
+    border-top: 1px solid #cfcfcf;
+    border-bottom: 1px solid #cfcfcf;
+    padding: 25px 60px;
+    text-align: center;
+    &:last-of-type{
+      border-bottom: 0;
+    }
+  }
+}

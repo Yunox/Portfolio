@@ -1,0 +1,35 @@
+{
+  "name": "Portfolio",
+  "version": "1.0.0",
+  "description": "Own Website",
+  "main": " ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Yunox/Portfolio.git"
+  },
+  "author": "David Riege",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/Yunox/Portfolio/issues"
+  },
+  "devDependencies": {
+    "jshint-stylish": "*",
+    "jshint": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-concat": "*",
+    "gulp": "*",
+    "gulp-cli": "*",
+    "gulp-jshint": "*",
+    "gulp-sass": "*",
+    "gulp-util": "*",
+    "gulp-image": "*",
+    "fs-extra": "*",
+    "gulp-clean-css": "*",
+    "gulp-rename": "*",
+    "gulp-w3cjs": "*",
+    "browser-sync": "*"
+  }
+}

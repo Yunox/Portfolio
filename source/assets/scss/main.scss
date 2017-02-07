@@ -1,0 +1,18 @@
+/*
+ *  Import your files here
+ */
+
+/* Reset */
+@import "lib/_reset.scss";
+/* Mixins */
+@import "lib/_mixins.scss";
+
+/* Custom files */
+@import "partials/_examplePage.scss";
+
+/* Schriften */
+@import "partials/_fonts.scss";
+
+.body {
+  background-color: #cfcfcf;
+}
