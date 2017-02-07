@@ -1,4 +1,4 @@
-# Gitting Started
+# Dank Portfolio
 [Github GUI](https://desktop.github.com/ "Get Github Desktop")
 [Node JS](https://nodejs.org/en/ "Get Node.js")
 [Atom Editor](https://atom.io/ "Get Atom")
