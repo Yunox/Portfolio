@@ -18,28 +18,26 @@
   font-weight: 600;
   color: rgb(50,50,50);
   &--small{
-    font-size: 16px;
+    font-size: 15px;
   }
   &--medium{
-    font-size: 20px;
+    font-size: 18px;
   }
   &--large{
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 
 .link {
   text-decoration: none;
+  color: rgb(50, 50, 50);
   &:visited {
-    color: inherit;
     text-decoration: none;
   }
   &:hover {
-    color: inherit;
     text-decoration: none;
   }
   &:focus {
-    color: inherit;
     text-decoration: none;
   }
 }
